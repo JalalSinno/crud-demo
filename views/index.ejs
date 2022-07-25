@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>My App</title>
 </head>
 <body>
-    <h1>May Node and Express be with you</h1>
+    <section class="titleContainer"> 
+        <h1>May Node and Express be with you</h1>
+    </section>
 
-    <form action="/quotes" method="POST">
-        <input type="text" placeholder="name" name="name">
-        <input type="text" placeholder="quote" name="quote">
-        <button type="submit">Submit</button>
-    </form>
-    <ul class='quotes'>
-        <% for(let i=0; i<quotes.length; i++) {%>
-            <li class="quote">
-                <span><%= quotes[i].name %></span>
-                <span><%= quotes[i].quote %></span>
-            </li>
-        <% } %>
-    </ul>
-    <section>
-        <h2>Quotes</h2>
-        <p>Replace first quote with another quote</p>
-        <button id="update-button">Replace quote</button>
+    <section class="actions">
+        <section class="add">
+            <h2>Add a Yoda quote</h2>
+            <form action="/quotes" method="POST">
+                <input type="text" placeholder="name" name="name">
+                <input type="text" placeholder="quote" name="quote">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="replace">
+            <h2>Remove a quote</h2>
+            <p>Delete one Darth Vader quote. Does nothing if there are no more quotes.</p>
+            <button id="delete-button">Delete quote</button>
+            <section id="message"></section>
+        </section>
+        <section class="delete">
+            <h2>Replace a Yoda quote</h2>
+            <p>Replace first quote with another quote</p>
+            <button id="update-button">Replace quote</button>
+        </section>
+    </section>
+    <section class="quoteContainer">
+        <h2>All Quotes</h2>
+        <ul class='quotes'>
+            <% for(let i=0; i<quotes.length; i++) {%>
+                <li class="quote">
+                    <span><%= quotes[i].name %></span>
+                    <span><%= quotes[i].quote %></span>
+                </li>
+            <% } %>
+        </ul>
     </section>
     <script src="/main.js"></script>
 </body>
