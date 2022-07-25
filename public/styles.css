@@ -83,6 +83,8 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 1em;
+    box-shadow: 1px 3px black;
 }
 
 .add{
@@ -91,6 +93,8 @@ h2{
     display: flex;
     flex-direction: column;
     flex-direction: space-evenly;
+    border-radius: 1em;
+    box-shadow: 1px 3px black;
 }
 
 form{
@@ -116,6 +120,8 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 1.5em;
+    box-shadow: 3px 5px 2px black;
 }
 
 .quoteContainer > h2{
