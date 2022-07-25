@@ -15,4 +15,4 @@ Make it so that you can replace any quote
 Make stricter restrictions on what can be passed through the forms to ensure both forms are filled with content before submission
 
 ## Lessons Learned:
-Solidified understanding of CRUD operations. Worked with CSS more to familiarize myself with flexbox.
+Solidified understanding of CRUD operations. Worked with CSS more to familiarize myself with flexbox. 
