@@ -1,7 +1,7 @@
 # Starwars Quote app
 This is an app that will allow you to add and replace Yoda quotes with Darth Vader quotes
 
-![Picutre of the project. Contents include title, add yoda quote, remove a quote, replace a yoda quote and a list of all the quotes](/pictureofapp.png)
+![Picutre of the project. Contents include title, add yoda quote, remove a quote, replace a yoda quote and a list of all the quotes](/newpic.png)
 
 ## How It's Made:
 
